@@ -100,12 +100,16 @@ If you have directories you use for caching that you'd like to clear when you de
 
 And git-deploy will empty those directories for you.
 
-### Ignore files
+### Ignore files or directories
 
 If you have files that you don't want uploaded to your server, you can add the following to your .ini file:
 
 	ignore_files[] = file/toignore.txt
 	ignore_files[] = another/file/toignore.php
+	
+or / and
+
+	ignore_directories[] = somedirectory/
 
 And git-deploy will ignore those files.
 
